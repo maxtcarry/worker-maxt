@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style media="screen">body{
+  overflow: hidden;
+}
+div{
+  z-index: 9999;
+  width: 340px;
+  height: 200px;
+  margin: 200px auto;
+}
+  input{
+    float: left;
+    width: 200px;
+    height: 40px;
+    border:0;
+    padding: 0;
+    margin: 0;
+    box-shadow: 1px 4px 4px #ccc;
+    outline: none;
+    color:#333;
+  }
+  button{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: none;
+    font-size: 12px;
+    border: none;
+    box-shadow: 1px 4px 1px #ccc;
+    outline: none;
+  }
+button::before{
+    content: "";
+    position: absolute;
+
+    animation: sf 4s infinite ;
+    transition: all 1s;
+    border-radius: 50%;
+  }
+  @keyframes sf {
+    0%{ width: 0;height: 0;left:50%;top:50%;    background: rgba(0,255,255,1);}
+    100%{ width: 200%;height: 200%;left: -50%;top: -50%;  background: rgba(0,255,255,0);}
+  }
+  button::after{
+      content: "";
+      position: absolute;
+
+      animation: sfd 4s 2s infinite;
+      transition: all 1s;
+      border-radius: 50%;
+    }
+    @keyframes sfd {
+      0%{ width: 0;height: 0;left:50%;top:50%;  background: rgba(2,0,255,1);}
+      100%{ width: 200%;height: 200%;left: -50%;top: -50%;  background: rgba(2,0,255,0);}
+    }</style>
+<body>
+
+  <div>
+<p id="p">你想说什么？</p>
+    <input type="text" name="" value="" id="text">
+  <button type="button" name="button" id="btn">发送</button>
+</div>
+</body>
+<script src="/uts.e31bb0bc.js" charset="utf-8"></script>
+</html>

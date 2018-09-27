@@ -1,0 +1,11 @@
+{
+  "name": "uts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "data": "^0.6.1",
+    "data.js": "^0.11.5",
+    "parcel-bundler": "^1.10.0"
+  }
+}

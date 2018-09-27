@@ -1,0 +1,7 @@
+:root {
+  --main-color: #CCC;
+}
+html{
+  background: var(--main-color);
+  text-shadow: 1px 1px 1px #ccc;
+}
